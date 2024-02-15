@@ -1,0 +1,33 @@
+{
+	"extends": "./.wxt/tsconfig.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+
+		"target": "ESNext",
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"moduleDetection": "force",
+
+		"forceConsistentCasingInFileNames": true,
+		"allowSyntheticDefaultImports": true,
+		"allowImportingTsExtensions": true,
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"incremental": true,
+
+		"jsx": "preserve",
+
+		"paths": {
+			"@/*": ["./*"]
+		}
+	},
+
+	"include": ["**/*.ts", "**/*.tsx", "**/*.js", "*.cjs", ".*.cjs"],
+	"exclude": [".output", ".wxt", "node_modules", "public"]
+}
